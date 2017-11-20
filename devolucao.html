@@ -26,7 +26,9 @@
     <section id="devolucaoLeituraOk" class="header">
           <div class="text-vertical-center">
             <h1 style="color:rgb(253, 253, 253)">Posicione o livro no leitor de código de barras</h1>
-            <br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br>
+            <img src="./img/barras-7.gif"> 
+            <br><br><br><br><br>
             <a href="#top" class="btn btn-blue btn-lg  pull-left js-scroll-trigger">Cancelar</a>
           </div>
     </section>
@@ -46,5 +48,17 @@
 </html>
 
 <script>
-    setTimeout(function(){location.href="devolucaoDados.html"} , 4000);
+   var cont =Math.round(Math.random()*2) + 1
+   switch(cont){
+     case 1:
+     setTimeout(function(){location.href="devolucaoDados.html"} , 4000);
+      break;
+     case 2:
+     setTimeout(function(){location.href="devolucaoDados.html"} , 4000);
+      break;
+     case 3:
+     setTimeout(function(){location.href="devolucaoDados.html"} , 4000);
+      break;
+   }
+   console.log(cont);
   </script>
