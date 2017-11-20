@@ -44,10 +44,10 @@ body {
 }
 
 .btn-green {
-  color: #fff;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 0;
-  background-color: rgba(10, 207, 109, 0.4);
+  background-color: rgba(14, 238, 122, 0.4);
 }
 
 .btn-green:hover, .btn-green:focus, .btn-green:active {
