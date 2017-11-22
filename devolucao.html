@@ -46,7 +46,7 @@
             Erro ao efetuar leitura do livro, tente novamente!
           </div>
           <div class="modal-footer">
-            <a type="button" class="btn btn-default" data-dismiss="modal">Cancelar</a>
+            <a href="devolucao.html" type="button" class="btn btn-default" data-dismiss="modal">Cancelar</a>
             <a href="devolucao.html" type="button" class="btn btn-info">Tente novamente</a>
           </div>
         </div>
@@ -70,7 +70,7 @@
 </html>
 
 <script>
-   var cont =Math.round(Math.random()*2) + 1
+   var cont =Math.round(Math.random()*4) + 1
    switch(cont){
      case 1:
       setTimeout(function(){location.href="devolucaoDados.html"} , 4000);
@@ -79,7 +79,13 @@
       setTimeout(function(){ $('#exampleModal').modal({'show':true}) } , 4000);
       break;
      case 3:
-     setTimeout(function(){location.href="devolucaoDados.html"} , 4000);
+      setTimeout(function(){location.href="devolucaoDados.html"} , 4000);
+      break;
+     case 4:
+      setTimeout(function(){location.href="devolucaoDados.html"} , 4000);
+      break;
+     case 5:
+      setTimeout(function(){location.href="devolucaoDados.html"} , 4000);
       break;
    }
    console.log(cont);

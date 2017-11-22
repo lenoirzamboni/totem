@@ -23,16 +23,35 @@
   </head>
 
 <!-- locacao -->
- <section id="locacao" class="header">
-        <div class="text-vertical-center wrapper">
-          <h1 style="color:rgb(253, 253, 253)"> Posicione o dedo cadastrado no leitor de digital</h1>
-          <br><br><br><br>
-          <img class="rounded" style="max-width:225px; max-height:175px;" src="./img/leitor-digital.gif">
-          <br><br><br><br><br>
-          <a href="tarefas.html" class="btn btn-warning btn-lg"><strong>Cancelar</strong></a>
+    <section id="locacao" class="header">
+      <div class="text-vertical-center wrapper">
+        <h1 style="color:rgb(253, 253, 253)"> Posicione o dedo cadastrado no leitor de digital</h1>
+        <br><br><br><br>
+        <img class="rounded" style="max-width:225px; max-height:175px;" src="./img/leitor-digital.gif">
+      <br><br><br><br><br>
+      <a href="tarefas.html" class="btn btn-warning btn-lg"><strong>Cancelar</strong></a>
+    </div>
+    </section>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Atenção</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Erro ao efetuar leitura da digital, tente novamente!
+            </div>
+            <div class="modal-footer">
+              <a href="locacao.html" type="button" class="btn btn-default" data-dismiss="modal">Cancelar</a>
+              <a href="locacao.html" type="button" class="btn btn-info">Tente novamente</a>
+            </div>
+          </div>
         </div>
-      </section>
-  
+      </div>  
       
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -48,5 +67,23 @@
 
 </html>
 <script>
-   setTimeout(function(){location.href="locacaoLeitor.html"} , 7000);
+   var cont =Math.round(Math.random()*4) + 1
+   switch(cont){
+     case 1:
+      setTimeout(function(){location.href="locacaoLeitor.html"} , 6000);
+      break;
+     case 2:
+      setTimeout(function(){ $('#exampleModal').modal({'show':true}) } , 4000);
+      break;
+     case 3:
+      setTimeout(function(){location.href="locacaoLeitor.html"} , 6000);
+      break;
+     case 4:
+      setTimeout(function(){location.href="locacaoLeitor.html"} , 6000);
+      break;
+     case 5:
+      setTimeout(function(){location.href="locacaoLeitor.html"} , 6000);
+      break;
+   }
+   console.log(cont);
 </script>
