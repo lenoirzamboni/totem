@@ -25,51 +25,36 @@
       <body>
         <section id="adicaoSucesso" class="header">
           <div class="text-vertical-center">
-            <h1 style="color:rgb(253, 253, 253)">Livro adicionado para locação com sucesso!</h1>
-            <br><br>
+            <h1  style="color:rgb(253, 253, 253)">Livro adicionado para locação com sucesso!</h1>
+            <br>
+            <div class="row">
+              <div class="col-8 offset-2">
+                <div class="wrap-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th width="50">#</th>
+                        <th>Nome do livro</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Como treinar um dragão</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <br><br><br>
             <h3 style="color:rgb(253, 253, 253)">Deseja locar mais algum livro?</h3>
-            <br><br><br><br><br><br><br><br><br>
-            <a href="locacaoNotificacao.html" class="btn btn-blue btn-lg js-scroll-trigger">Não</a>
-            <a href="locarNovoLivro.html" class="btn btn-blue btn-lg js-scroll-trigger">Sim</a>
+            <br><br><br>
+            <a href="locacaoNotificacao.html" style="margin-right:80px" class="btn btn-info btn-lg"><strong>Não</strong></a>
+            <a href="locacaoLeitor.html" class="btn btn-info btn-lg"><strong>Sim</strong></a>
           </div>
         </section>
-    
-        <section id="livrosLocados" class="header">
-            <br><br><br><br>
-            <div class="row">
-              <div class="col-1"></div>
-              <div class="col-6">
-                  <table class="table">
-                      <thead>
-                        <tr>
-                          <th>#</th>
-                          <th>Nome do livro</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Como treinar um dragão</td>
-                        </tr>
-                      </tbody>
-                    </table>
-              </div>
-              <div class="col-5"></div>
-            </div>    
-            <br><br><br>
-            <h3 class="text-center" style="color:rgb(253, 253, 253)">Deseja locar mais algum livro?</h3>
-            <div class="row">
-              <div class="col-5"></div>
-              <div class="col-4" style="margin-left:34px;">
-                  <a href="#livrosLocadosSucesso" class="btn btn-blue btn-lg js-scroll-trigger">Não</a>
-                  <a href="#adicaoSucesso" class="btn btn-blue btn-lg js-scroll-trigger">Sim</a>
-              </div>
-              <div class="col-4"></div>
-              </div>          
-          </section>
-          <!-- FIM LOCACAO -->
-    
-    
+       
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

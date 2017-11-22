@@ -29,10 +29,30 @@
             <br><br><br><br><br>
             <img src="./img/barras-7.gif"> 
             <br><br><br><br><br>
-            <a href="index.html" class="btn btn-blue btn-lg  pull-left js-scroll-trigger">Cancelar</a>
+            <a href="index.html" class="btn btn-warning btn-lg"><strong>Cancelar</strong></a>
           </div>
     </section>
     
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Atenção</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Erro ao efetuar leitura do livro, tente novamente!
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-default" data-dismiss="modal">Cancelar</a>
+            <a href="devolucao.html" type="button" class="btn btn-info">Tente novamente</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -43,6 +63,8 @@
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.js"></script>
 
+
+
   </body>
 
 </html>
@@ -51,10 +73,10 @@
    var cont =Math.round(Math.random()*2) + 1
    switch(cont){
      case 1:
-     setTimeout(function(){location.href="devolucaoDados.html"} , 4000);
+      setTimeout(function(){location.href="devolucaoDados.html"} , 4000);
       break;
      case 2:
-      // gera erro
+      setTimeout(function(){ $('#exampleModal').modal({'show':true}) } , 4000);
       break;
      case 3:
      setTimeout(function(){location.href="devolucaoDados.html"} , 4000);

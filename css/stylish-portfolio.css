@@ -31,52 +31,16 @@ body {
 
 /* Custom Button Styles */
 
-.btn-dark {
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  background-color: rgba(10, 207, 109, 0.4);
+
+.header .text-vertical-center{
+  padding: 0 100px;
 }
 
-.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
-  color: #fff;
-  background-color: rgba(10, 207, 109, 0.4);
-}
 
-.btn-green {
-  color: rgb(0, 0, 0);
-  border: none;
-  border-radius: 0;
-  background-color: rgba(14, 238, 122, 0.4);
-}
 
-.btn-green:hover, .btn-green:focus, .btn-green:active {
-  color: #fff;
-  background-color: rgba(10, 207, 109, 0.4);
-}
-
-.btn-blue {
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  background-color: rgba(13, 62, 221, 0.795);
-}
-
-.btn-blue:hover, .btn-blue:focus, .btn-blue:active {
-  color: #fff;
-  background-color: rgba(13, 62, 221, 0.795);
-}
-
-.btn-light {
-  color: #333;
-  border: none;
-  border-radius: 0;
-  background-color: rgb(255, 255, 255);
-}
-
-.btn-light:hover, .btn-light:focus, .btn-light:active {
-  color: #333;
-  background-color: rgba(255, 255, 255, .8);
+.btn-lg{
+  padding: 20px 50px;
+  font-size: 30px;
 }
 
 
@@ -187,7 +151,20 @@ hr.small {
   -o-background-size: cover;
   background-size: cover;
 }
-
+.header:before {
+  content: '';
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.3);
+}
+.text-vertical-center {
+  position: relative;
+  z-index: 2;
+}
 
 /* About */
 
@@ -247,10 +224,6 @@ hr.small {
   padding: 50px 0;
 }
 
-.call-to-action .btn {
-  margin: 10px;
-}
-
 
 /* Map */
 
@@ -282,4 +255,12 @@ footer {
   bottom: 5px;
   display: none;
   padding: 15px 20px;
+}
+
+
+/* Table */
+.wrap-table {
+  background: white;
+  padding: 30px !important;
+  border-radius: 10px;
 }
